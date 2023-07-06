@@ -1,15 +1,1 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    {% for meta in settings.METAS %}
-        {% if 'charset' in meta.meta %}
-            <meta charset="{{ meta.valor }}">
-        {% else %}
-            <meta name="{{ meta.meta }}" content="{{ meta.valor }}">
-        {% endif %}
-    {% endfor %}    
-    </head>
-    <body>
-        Prueba!<br>
-    </body>
-</html>
+{% extends 'base.html' %}

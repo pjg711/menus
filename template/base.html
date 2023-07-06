@@ -1,0 +1,23 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+    {% fontawesome_5_static %}
+    {% for meta in settings.METAS %}
+        {% if 'charset' in meta.meta %}
+            <meta charset="{{ meta.valor }}">
+        {% else %}
+            <meta name="{{ meta.meta }}" content="{{ meta.valor }}">
+        {% endif %}
+    {% endfor %}
+    <title>{{ inicio.titulo }}</title>
+    <!-- Estilos propios -->
+    {% block estilos %}{% endblock %}
+    {% block scripts2 %}{% endblock %}
+</head>
+<body>
+    {% block content %}<!-- contenido principal -->{% endblock %}
+    {% block scripts %}{% endblock %}
+</body>
+</html>

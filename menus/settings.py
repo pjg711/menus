@@ -71,6 +71,22 @@ TEMPLATES = [
     },
 ]
 
+METAS = [
+    {"meta": "charset", "valor": "utf-8"},
+    {
+        "meta": "viewport",
+        "valor": "width=device-width, initial-scale=1.0, shrink-to-fit=no",
+    },
+    {
+        "meta": "description",
+        "valor": "Menus para Django 3.2.5",
+    },
+    {"meta": "keywords", "valor": "menus,django"},
+    {"meta": "language", "valor": "es-ES"},
+    {"meta": "robots", "valor": "index, follow"},
+    {"meta": "author", "valor": "Pablo García, pablo.ju.garcia@gmail.com"},
+]
+
 WSGI_APPLICATION = 'menus.wsgi.application'
 
 
